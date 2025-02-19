@@ -33,7 +33,7 @@ Jarvis - то небольшой голосовой ассистент с отк
     ```bash
     pip install -r requirements.txt
     ```
-6. Установите модель для распознования речи "vosk-model-small-ru" [по ссылке](https://github.com/alphacep/vosk-space/blob/master/models.md)
+6. Установите модель для распознования речи "vosk-model-small-ru" [по ссылке](https://github.com/alphacep/vosk-space/blob/master/models.md) и поместите в папку с установленными исходниками.
 7. Запустите проект:
     ```bash
     python main.py
