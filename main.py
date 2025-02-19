@@ -231,5 +231,4 @@ while True:
         raise
 
 
-bot.polling(none_stop=True)
 print()
