@@ -5,7 +5,8 @@ Jarvis - это небольшой голосовой ассистент с от
 ## Содержание
 
 - [Установка](#установка)
-- [Использование](#использование)
+- [Стек](#стек)
+- [Возможности](#возможности)
 
 ## Установка
 
@@ -38,6 +39,17 @@ Jarvis - это небольшой голосовой ассистент с от
     ```bash
     python main.py
     ```
+   
+## Стек
+
+В проекте используется:
+- [Python 3.12](https://www.python.org/) - основной язык программирования
+- [yaml](https://ru.wikipedia.org/wiki/YAML) - язык сериализации для хранения списка команд
+- [vosk](https://github.com/alphacep/vosk-space) - для распознавания речи
+- [Picovoice Porcupine](https://console.picovoice.ai/ppn) - для Wake Word (активационной фразы)
+- [silero-tts](https://github.com/snakers4/silero-models) - для синтеза речи
+- [fuzzywuzzy](https://pypi.org/project/fuzzywuzzy/) - алгоритм расстояния Левенштейна
+- [Mistral AI](https://mistral.ai/) - в качестве нейросети для разговора
 
 ## Возможности
 
