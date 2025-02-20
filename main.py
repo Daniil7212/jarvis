@@ -1,4 +1,4 @@
-# Джарвис v1.0.0
+# Джарвис v1.0.1
 import json
 import config
 import api
