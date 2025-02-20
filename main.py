@@ -71,20 +71,20 @@ def play(sound: str):
     s: str = ""
     if sound == 'greet':
         r = str(random.randint(1, 3))
-        s = f"C:/Users/Daniil/Desktop/Steve/sound/{sound + r}.wav"
+        s = f"C:/Users/Daniil/Desktop/Python/jarvis/sound/{sound + r}.wav"
     if sound == 'ok':
         r = str(random.randint(1, 3))
-        s = f"sound/{sound + r}.wav"
+        s = f"C:/Users/Daniil/Desktop/Python/jarvis/sound/{sound + r}.wav"
     elif sound == 'not_found':
-        s = f"sound/{sound}.wav"
+        s = f"C:/Users/Daniil/Desktop/Python/jarvis/sound/{sound}.wav"
     elif sound == 'off':
-        s = f"C:/Users/Daniil/Desktop/Steve/sound/{sound}.wav"
+        s = f"C:/Users/Daniil/Desktop/Python/jarvis/sound/{sound}.wav"
     elif sound == 'ready':
-        s = f"sound/{sound}.wav"
+        s = f"C:/Users/Daniil/Desktop/Python/jarvis/sound/{sound}.wav"
     elif sound == 'run':
-        s = f"C:/Users/Daniil/Desktop/Steve/sound/{sound}.wav"
+        s = f"C:/Users/Daniil/Desktop/Python/jarvis/sound/{sound}.wav"
     elif sound == 'stupid':
-        s = f"sound/{sound}.wav"
+        s = f"C:/Users/Daniil/Desktop/Python/jarvis/sound/{sound}.wav"
     elif sound == 'thanks':
         s = f"C:/Users/Daniil/Desktop/Steve/sound/{sound}.wav"
 
@@ -188,7 +188,6 @@ def execute_cmd(cmd: str, voice: str):
     elif cmd == 'tell':
         gpt_answer = gpt.gpt_answer(voice)
         va_speak(gpt_answer)
-        print("GPT: " + gpt_answer)
     elif cmd == 'google':
         webbrowser.get(config.YA_PATH).open("https://www.google.com/search?q=" + voice.split(' ', maxsplit=1)[1])
         play("ok")
