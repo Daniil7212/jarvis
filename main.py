@@ -1,4 +1,4 @@
-# Джарвис v1.0.1
+# Джарвис v1.0.2
 import json
 import config
 import api
@@ -19,6 +19,8 @@ from fuzzywuzzy import fuzz
 from pvrecorder import PvRecorder
 from functions import what_weather, num_to_text
 
+print("Загрузка...")
+
 # PORCUPINE
 porcupine = pvporcupine.create(
     access_key=api.PORCUPINE_API_KEY,
@@ -30,8 +32,8 @@ recorder = PvRecorder(device_index=-1, frame_length=porcupine.frame_length)
 recorder.start()
 
 # VOSK
-model = vosk.Model("vosk_model_small")
-samplerate = 16000
+model = vosk.Model("vosk_model_big")
+samplerate = 24000
 kaldi_rec = vosk.KaldiRecognizer(model, samplerate)
 
 # Настройки модели
@@ -87,8 +89,10 @@ def play(sound: str):
         s = f"C:/Users/Daniil/Desktop/Python/jarvis/sound/{sound}.wav"
     elif sound == 'thanks':
         s = f"C:/Users/Daniil/Desktop/Steve/sound/{sound}.wav"
-
-    playsound.playsound(s)
+    try:
+        playsound.playsound(s)
+    except:
+        print("Error...")
 
 
 # Распознование речи
@@ -228,6 +232,3 @@ while True:
     except Exception as err:
         print(f"Unexpected {err=}, {type(err)=}")
         raise
-
-
-print()

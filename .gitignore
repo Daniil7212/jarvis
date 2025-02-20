@@ -1,3 +1,4 @@
 api.py
 vosk_model_small/
+vosk_model_big/
 venv/
