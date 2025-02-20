@@ -6,8 +6,8 @@ VA_VER = "1.0.1"
 VA_TBR = ('скажи', 'покажи', 'ответь', 'произнеси', 'расскажи', 'сколько')
 
 # Свойства пользователя
-USER_NAME = "Макар"
-USER_TOWN = "Тюмен"
+USER_NAME = ""
+USER_TOWN = ""
 
 # Пути к программам
 YA_PATH = 'C:/Users/Daniil/AppData/Local/Yandex/YandexBrowser/Application/browser.exe %s'
