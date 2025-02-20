@@ -7,7 +7,7 @@ VA_TBR = ('скажи', 'покажи', 'ответь', 'произнеси', '�
 
 # Свойства пользователя
 USER_NAME = ""
-USER_TOWN = ""
+USER_TOWN = "Москва"
 
 # Пути к программам
 YA_PATH = 'C:/Users/Daniil/AppData/Local/Yandex/YandexBrowser/Application/browser.exe %s'

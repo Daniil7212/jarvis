@@ -33,14 +33,14 @@ def gpt_answer(request):
 
 
 # функция для разговора с gpt так чтобы он знал прошлые запросы
-def gpt_embedded(request):
+def gpt_embed(request):
     embeds.append(request)
     embeddings_response = client.embeddings.create(
         model="mistral-embed",
         inputs=embeds,
     )
 
-    return embeddings_response.choices[0].message.content
+    return embeddings_response.data[0].embedding
 
 
 # print(gpt_answer("Привет, как дела"))
