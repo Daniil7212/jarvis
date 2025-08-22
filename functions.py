@@ -105,4 +105,3 @@ def what_weather(city):
         t = f"минус {num_to_text(n, 0)} {text}"
 
     return t
-
